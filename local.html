@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>City Guide – Local Services</title>
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:#f2f4f7;
+    }
+
+    header{
+      background:#0d6efd;
+      color:#fff;
+      padding:18px;
+      text-align:center;
+    }
+
+    header h1{
+      margin:0;
+      font-size:26px;
+    }
+
+    .container{
+      max-width:1200px;
+      margin:30px auto;
+      padding:0 15px;
+    }
+
+    .service-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+      gap:22px;
+    }
+
+    .service-card{
+      background:#fff;
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:0 8px 18px rgba(0,0,0,0.12);
+      transition:0.3s;
+    }
+
+    .service-card:hover{
+      transform:translateY(-6px);
+    }
+
+    .service-card img{
+      width:100%;
+      height:180px;
+      object-fit:cover;
+    }
+
+    .card-body{
+      padding:16px;
+    }
+
+    .card-body h2{
+      margin:0 0 10px;
+      text-align:center;
+      font-size:22px;
+      color:#222;
+    }
+
+    .card-body ul{
+      list-style:none;
+      padding:0;
+      margin:0 0 15px;
+      font-size:15px;
+      color:#333;
+      line-height:1.6;
+    }
+
+    .card-body ul li{
+      margin:5px 0;
+      padding-left:18px;
+      position:relative;
+    }
+
+    .card-body ul li::before{
+      content:"✔";
+      color:#0d6efd;
+      position:absolute;
+      left:0;
+    }
+
+    .btn-group{
+      display:flex;
+      gap:10px;
+    }
+
+    .btn{
+      flex:1;
+      text-align:center;
+      padding:10px 0;
+      border-radius:8px;
+      text-decoration:none;
+      font-size:14px;
+      font-weight:bold;
+      color:#fff;
+    }
+
+    .visit{
+      background:#28a745;
+    }
+
+    .map{
+      background:#0d6efd;
+    }
+
+  </style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <div class="service-grid">
+
+   
+    <!-- BANK -->
+    <div class="service-card">
+      <img src="./image/bank.jpeg" alt="Bank">
+      <div class="card-body">
+        <h2>Banks</h2>
+
+        <!-- place 1 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;margin-bottom:10px;">
+          <strong>State Bank of India</strong><br>
+          <small>Satara City</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://sbi.bank.in/" class="btn visit">Visit Now!</a>
+             <a  href="https://maps.app.goo.gl/2oRdrFGroAtxDz7X9" 
+             target="_blank" 
+              class=" btn map"> View Map
+             </a>
+          </div>
+        </div>
+
+        <!-- place 2 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;margin-bottom:10px;">
+          <strong>ICICI Bank</strong><br>
+          <small>Powai Naka</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://www.icici.bank.in/branch/maharashtra/satara/icic0003456" class="btn visit">Visit Now!</a>
+            <a href="https://maps.app.goo.gl/CRVpcMv6DhHmADJ78" 
+      target="_blank" 
+      class=" btn map">
+         View Map
+    </a>
+          </div>
+        </div>
+
+        <!-- place 3 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;">
+          <strong>Bank of Maharashtra</strong><br>
+          <small>Ravivar Peth</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://branch-atm-locator.bankofmaharashtra.bank.in/" class="btn visit">Visit Now!</a>
+             <a href="https://maps.app.goo.gl/KHehKq66Pj6kvY5fA" 
+      target="_blank" 
+      class=" btn map">
+         View Map
+    </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- COLLAGE AND SCHOOL -->
+    <div class="service-card">
+      <img src="./image/yc.jpeg" alt="Bank">
+      <div class="card-body">
+        <h2>Education</h2>
+
+        <!-- place 1 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;margin-bottom:10px;">
+          <strong>Ycis Satara</strong><br>
+          <small>Powai naka</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://www.ycis.ac.in/" class="btn visit">Visit Now!</a>
+            <a  href="https://maps.app.goo.gl/NRRUanFrs58HmHJ38" 
+             target="_blank" 
+              class=" btn map"> View Map
+             </a>
+          </div>
+        </div>
+
+        <!-- place 2 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;margin-bottom:10px;">
+          <strong>Manju institute of technology</strong><br>
+          <small>Powai Naka</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://www.manjuinstitutesatara.com/" class="btn visit">Visit Now!</a>
+            <a  href="https://maps.app.goo.gl/meRdx7228fo62zG76" 
+             target="_blank" 
+              class=" btn map"> View Map
+             </a>
+          </div>
+        </div>
+
+        <!-- place 3 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;">
+          <strong>Yashoda technical campus</strong><br>
+          <small>NH-4 Wade satara highway</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://www.yes.edu.in/" class="btn visit">Visit Now!</a>
+           <a  href="https://maps.app.goo.gl/eN9nsBLd841aDrFp9" 
+             target="_blank" 
+              class=" btn map"> View Map
+             </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+    
+<!-- MEDICINE STORE -->
+    <div class="service-card">
+      <img src="./image/medicine.jpeg" alt="Bank">
+      <div class="card-body">
+        <h2>Medicine store</h2>
+
+        <!-- place 1 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;margin-bottom:10px;">
+          <strong>Wellness Forever</strong><br>
+          <small>Powai Naka</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://www.wellnessforever.com/" class="btn visit">Visit Now!</a>
+            <a  href="https://maps.app.goo.gl/ChFBye6hq9o3EfAJ8" 
+             target="_blank" 
+              class=" btn map"> View Map
+             </a>
+          </div>
+        </div>
+
+        <!-- place 2 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;margin-bottom:10px;">
+          <strong>Chemist bhuvan Satara</strong><br>
+          <small>Guruwar peth </small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://magicpin.in/" class="btn visit">Visit Now!</a>
+           <a  href="https://maps.app.goo.gl/qJgJBcTGy2862a5LA" 
+             target="_blank" 
+              class=" btn map"> View Map
+             </a>
+          </div>
+        </div>
+
+        <!-- place 3 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;">
+          <strong>Pradip medical store</strong><br>
+          <small>Powai naka</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://www.justdial.com/Satara/Pradeep-Medical-Store" class="btn visit">Visit Now!</a>
+          <a  href="https://maps.app.goo.gl/jKHPnf7G1UwW6Xbg9" 
+             target="_blank" 
+              class=" btn map"> View Map
+             </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+    
+<!-- HOSPITAL -->
+    <div class="service-card">
+      <img src="./image/Hospitals.webp" alt="Bank">
+      <div class="card-body">
+        <h2>Hospital</h2>
+
+        <!-- place 1 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;margin-bottom:10px;">
+          <strong>Satara Hospital & Research</strong><br>
+          <small>Sadar Bazar satara</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://www.satarahospitalandrc.com/" class="btn visit">Visit Now!</a>
+            <a  href="https://maps.app.goo.gl/NrsoicLCF358h1Em7" 
+             target="_blank" 
+              class=" btn map"> View Map
+             </a>
+          </div>
+        </div>
+
+        <!-- place 2 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;margin-bottom:10px;">
+          <strong>Civil Hospital </strong><br>
+          <small>Sadar Bazar </small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://www.justdial.com/Satara/District-Civil-Hospital" class="btn visit">Visit Now!</a>
+            <a  href="https://maps.app.goo.gl/RcYdSaQiz4tcknm36" 
+             target="_blank" 
+              class=" btn map"> View Map
+             </a>
+          </div>
+        </div>
+
+        <!-- place 3 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;">
+          <strong>Krishna Hospital </strong><br>
+          <small>Malakapur karad</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://kvv.edu.in/krishna-hospital/" class="btn visit">Visit Now!</a>
+          <a  href="https://maps.app.goo.gl/2E86dxp62FDQMekQ7" 
+             target="_blank" 
+              class=" btn map"> View Map
+             </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+    <!-- ATM -->
+    <div class="service-card">
+      <img src="./image/atm.jpeg"alt="">
+      <div class="card-body">
+        <h2>Atm</h2>
+
+        <!-- place 1 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;margin-bottom:10px;">
+          <strong>Bank of India Atm</strong><br>
+          <small>Sadar bazar satara</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://www.justdial.com/Satara/Bank-Of-India-ATMS/nct-11979898" class="btn visit">Visit Now!</a>
+           <a  href="https://maps.app.goo.gl/AGU5GMQHdgndTHEp9" 
+             target="_blank" 
+              class=" btn map"> View Map
+             </a>
+          </div>
+        </div>
+
+        <!-- place 2 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;margin-bottom:10px;">
+          <strong>ICICI Bank Atm</strong><br>
+          <small>Shivratna college Road laxminagar</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://www.icici.bank.in/" class="btn visit">Visit Now!</a>
+           <a  href="https://maps.app.goo.gl/WGSFA3neoQSAZbLi8" 
+             target="_blank" 
+              class=" btn map"> View Map
+             </a>
+           
+          </div>
+        </div>
+
+        <!-- place 3 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;">
+          <strong>Bank of Maharashtra Atm</strong><br>
+          <small>Powai naka</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://branch-atm-locator.bankofmaharashtra.bank.in/" class="btn visit">Visit Now!</a>
+           <a  href="https://maps.app.goo.gl/dSSFf6y4wSLauKzf9" 
+             target="_blank" 
+              class=" btn map"> View Map
+             </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+    
+<!-- RESTAURANT -->
+    <div class="service-card">
+      <img src="./image/res.jpeg"alt="">
+      <div class="card-body">
+        <h2>Restaurant</h2>
+
+        <!-- place 1 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;margin-bottom:10px;">
+          <strong>Dadaj Biryani House</strong><br>
+          <small>Satara Phaltan road Godoli</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://www.justdial.com/Satara/Dadaj-Biryani-House" class="btn visit">Visit Now!</a>
+            <a  href="https://maps.app.goo.gl/fhEYnkWfvNxBxGsh9" 
+             target="_blank" 
+              class=" btn map"> View Map
+             </a>
+          </div>
+        </div>
+
+        <!-- place 2 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;margin-bottom:10px;">
+          <strong>Hotel chandravilas Resto</strong><br>
+          <small>Powai Naka</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://www.swiggy.com/city/satara/hotel-chandravilas-resto-powai-naka-rest834733" class="btn visit">Visit Now!</a>
+             <a 
+      href="https://maps.app.goo.gl/CvU1LsRuW8yD78kV9" 
+      target="_blank" 
+      class=" btn map">
+         View Map
+    </a>
+         
+          </div>
+        </div>
+
+        <!-- place 3 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;">
+          <strong>Hotel maharaja Place</strong><br>
+          <small>NH-4 Highway satara</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://www.justdial.com/Satara/Hotel-Maharaja-Palace-Bharatgaon-Wadi/" class="btn visit">Visit Now!</a>
+           <a  href="https://maps.app.goo.gl/T8unmxecyqzz137D8" 
+             target="_blank" 
+              class=" btn map"> View Map
+             </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PHOTOGRAPHERS -->
+    <div class="service-card">
+      <img src="./image/photo.jpeg" alt="">
+      <div class="card-body">
+        <h2>Photographers</h2>
+
+        <!-- place 1 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;margin-bottom:10px;">
+          <strong>Ghodake Photo studio</strong><br>
+          <small>Radhika road</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://www.justdial.com/Satara/Ghodake-Photo-Studio-Pratapganj-Peth" class="btn visit">Visit Now!</a>
+            <a  href="https://maps.app.goo.gl/6RJBgiWKgDSjSJnM8" 
+             target="_blank" 
+              class=" btn map"> View Map
+             </a>
+          </div>
+        </div>
+
+        <!-- place 2 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;margin-bottom:10px;">
+          <strong>One click Photography</strong><br>
+          <small>Rajpth Godoli</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://www.justdial.com/Satara/One-Click-Photography-Near-Om-Computer-Godoli/9999P2162-2162-190513214455-X1C2_BZDET" class="btn visit">Visit Now!</a>
+            
+             <a  href="https://maps.app.goo.gl/95XGsoJr2RfQyGDP6" 
+      target="_blank" 
+      class=" btn map">
+         View Map
+    </a>
+         
+          </div>
+        </div>
+
+        <!-- place 3 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;">
+          <strong>Candid Katha</strong><br>
+          <small>Shaniwar Peth</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://www.justdial.com/Satara/Candid-Katha-Shaniwar-Peth/9999P2162-2162-180914075934-P7B5_BZDET" class="btn visit">Visit Now!</a>
+           <a  href="https://maps.app.goo.gl/cM8GTpReVj1ZqW7u6" 
+             target="_blank" 
+              class=" btn map"> View Map
+             </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CAR HIRE-->
+    <div class="service-card">
+      <img src="./image/car.jpg" alt="">
+      <div class="card-body">
+        <h2>Car Hire</h2>
+
+        <!-- place 1 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;margin-bottom:10px;">
+          <strong>Om Sai Tours and Travels</strong><br>
+          <small>Mahabaleshwar</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://www.omsaitourstravels.com/" class="btn visit">Visit Now!</a>
+            <a  href="https://maps.app.goo.gl/waYGjRoC8BWiPn4PA" 
+             target="_blank" 
+              class=" btn map"> View Map
+             </a>
+          </div>
+        </div>
+
+        <!-- place 2 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;margin-bottom:10px;">
+          <strong>Aaradhya Tours and Travels</strong><br>
+          <small> satara</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://www.justdial.com/Satara/Aaradhya-Tours-and-Travels-Pachvad-Satara/9999P2162-2162-180328192023-Q9I5_BZDET" class="btn visit">Visit Now!</a>
+             <a 
+      href="https://maps.app.goo.gl/saMrTzgUZfdACNme9" 
+      target="_blank" 
+      class=" btn map">
+         View Map
+    </a>
+         
+          </div>
+        </div>
+
+        <!-- place 3 -->
+        <div style="border:1px solid #e0e0e0;border-radius:8px;padding:10px;">
+          <strong>Vaishnavi Tours and Travels</strong><br>
+          <small>Wai satara</small>
+          <div class="btn-group" style="margin-top:8px;">
+            <a href="https://www.justdial.com/Satara/Vaishnavi-Tours-Travels-Opposite-Rajwada-Near-St-Stand/9999P2162-2162-130619173914-L7X1_BZDET" class="btn visit">Visit Now!</a>
+           <a  href="https://maps.app.goo.gl/ByCGxQjnCYFE2C5m9" 
+             target="_blank" 
+              class=" btn map"> View Map
+             </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+    
+
+
+    
+
+  </div>
+</div>
+
+</body>
+</html>

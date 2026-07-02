@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel </title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#484458,#5eb9c9);
+}
+
+/* Grid Layout */
+.card-row{
+    width:90%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+}
+
+/* Card */
+.card{
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 20px 40px rgba(0,0,0,0.3);
+    transition:0.4s ease;
+    animation: fadeUp 1s ease forwards;
+    opacity:0;
+}
+
+/* Hover Animation */
+.card:hover{
+    transform: translateY(-15px) scale(1.03);
+    box-shadow:0 25px 50px rgba(0,0,0,0.5);
+}
+
+/* Image */
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    transition:0.4s ease;
+}
+
+.card:hover img{
+    transform: scale(1.1);
+}
+
+/* Card Body */
+.card-body{
+    padding:20px;
+    text-align:center;
+    color:#fff;
+}
+
+.card-title{
+    font-size:24px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.card-desc{
+    font-size:15px;
+    line-height:1.6;
+}
+
+/* Fade Animation */
+@keyframes fadeUp{
+    from{
+        transform: translateY(50px);
+        opacity:0;
+    }
+    to{
+        transform: translateY(0);
+        opacity:1;
+    }
+}
+
+/* Delay for each card */
+.card:nth-child(1){ animation-delay:0.2s; }
+.card:nth-child(2){ animation-delay:0.4s; }
+.card:nth-child(3){ animation-delay:0.6s; }
+
+/* Responsive */
+@media(max-width:992px){
+    .card-row{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .card-row{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card-row">
+
+    <div class="card">
+        <img src="./files/road.jpg" alt="Road">
+        <div class="card-body">
+            <div class="card-title">By Road</div>
+            <div class="card-desc">
+                Satara has a functional bus stand.you also have the option of availing 
+                    Volvo/reclining seat/sleeper buses.private operators providing bus services.Apart 
+                    from private buses,MSRTC(Maharashtra state Road Transport Corporation)
+                    offer regular and frequent bus services to satara from Mumbai and Pune.
+                    the area also well connected to other neighbouring cities by public buses.
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./files/rail.png" alt="Train">
+        <div class="card-body">
+            <div class="card-title">By Train</div>
+            <div class="card-desc">
+               Situated on the Pune-Miraj line,the satara Railway Station is 
+                    well connected to other indian cities.Regular trains from Mumbai and Pune are also 
+                    available to reach Satara.
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./files/air.jpg" alt="Air">
+        <div class="card-body">
+            <div class="card-title">By Air</div>
+            <div class="card-desc">
+                Lohegoan Airport is located at a distance of 123km from Satara and can be 
+                reached by buses and taxis available near the airport.it takes approximately 2 hours and 44 minutes 
+                to make the journey to satara.Mumbai's Chhatrapati Shivaji Airport is located at a distance of about 
+                264 km from Satara,and is a four and a half hour's journey via road.
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
